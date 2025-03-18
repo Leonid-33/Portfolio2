@@ -1,9 +1,8 @@
 /* Général */
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7; /* fond clair */
-    color: #333;
+    background-color: #fff; /* fond blanc */
+    color: #000; /* noir */
     margin: 0;
     padding: 0;
 }
@@ -53,7 +52,6 @@ nav ul li a:hover {
 }
 
 /* Menu Mobile */
-
 .nav-toggle {
     display: none;
     background-color: transparent;
@@ -97,14 +95,13 @@ nav ul li a:hover {
 }
 
 /* Contenu principal */
-
 main {
     padding: 40px 10%;
 }
 
 section {
     margin-bottom: 40px;
-    background-color: #ffffff; /* fond blanc */
+    background-color: #fff; /* fond blanc */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -113,13 +110,13 @@ section {
 section h2 {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #000000; /* noir */
+    color: #000; /* noir */
 }
 
 section p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #555;
+    color: #000; /* noir */
 }
 
 .btn {
@@ -137,7 +134,6 @@ section p {
 }
 
 /* Projets */
-
 .project {
     display: flex;
     margin-bottom: 30px;
@@ -156,7 +152,7 @@ section p {
 
 .project h3 {
     font-size: 1.5rem;
-    color: #000000; /* noir */
+    color: #000; /* noir */
 }
 
 .project ul {
@@ -166,13 +162,12 @@ section p {
 
 .project ul li {
     font-size: 1rem;
-    color: #555;
+    color: #000; /* noir */
 }
 
 /* Footer */
-
 footer {
-    background-color: #000000; /* noir */
+    background-color: #000; /* noir */
     color: white;
     text-align: center;
     padding: 20px;
@@ -183,7 +178,6 @@ footer p {
 }
 
 /* Responsive */
-
 @media (max-width: 768px) {
     main {
         padding: 20px;

@@ -3,115 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio Leonid Vitaly | Sécurité Informatique</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
+
+    <header>
+        <h1>Bienvenue sur mon Portfolio</h1>
+        <p>Développeur & Passionné de Cybersécurité</p>
+    </header>
+
     <nav>
-        <button class="nav-toggle">
-            <span class="hamburger"></span> <!-- Bouton menu -->
+        <button class="nav-toggle" aria-label="Menu">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
         </button>
         <ul>
-            <li><a href="#about">Présentation</a></li>
-            <li><a href="#projects">Réalisations</a></li>
-            <li><a href="#cv">Mon CV</a></li>
-            <li><a href="#github">GitHub</a></li>
-            <li><a href="#contact">Me Contacter</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- En-tête -->
-    <header>
-        <h1>🔐 Passionné de Cybersécurité</h1>
-        <p>Découvrez mon monde et ma passion pour les nouvelles technologies.</p>
-    </header>
-
     <main>
-        <!-- Présentation -->
+
         <section id="about">
-            <h2>Qui suis-je ?</h2>
-            <p>Etudiant Analyste en sécurité informatique, je travaille sur des solutions de protection des infrastructures IT.</p>
+            <h2>À propos de moi</h2>
+            <p>Je suis un développeur spécialisé en cybersécurité, passionné par l’automatisation et la création d’outils pour renforcer la sécurité informatique.</p>
         </section>
 
-        <!-- Réalisations -->
         <section id="projects">
-            <h2>Projets de Sécurité</h2>
-
+            <h2>Mes Projets</h2>
+            
             <div class="project">
-                <img src="security_analysis.jpg" alt="Audit de Sécurité">
+                <img src="project1.jpg" alt="Projet 1">
                 <div>
-                    <h3>🕵️‍♂️ Audit de Sécurité</h3>
-                    <p>Utilisation d’outils avancés comme <strong>Burp Suite</strong> et <strong>Metasploit</strong>.</p>
+                    <h3>Outil de Pentest</h3>
                     <ul>
-                        <li>✅ Évaluation des risques sur les systèmes et applications.</li>
-                        <li>✅ Test d'intrusion et exploitation de vulnérabilités.</li>
-                        <li>✅ Rédaction de rapports techniques.</li>
+                        <li>✔ Automatisation des tests de vulnérabilités</li>
+                        <li>✔ Intégration de scripts Python avancés</li>
+                        <li>✔ Utilisation de Scapy et Nmap</li>
                     </ul>
                 </div>
             </div>
 
             <div class="project">
-                <img src="ctf_challenge.jpg" alt="Challenge CTF">
+                <img src="project2.jpg" alt="Projet 2">
                 <div>
-                    <h3>🏆 Challenges de Sécurité</h3>
-                    <p>Compétition et formation via <strong>Root-Me</strong> et <strong>CTFtime</strong>.</p>
+                    <h3>Analyse Forensique</h3>
                     <ul>
-                        <li>🚀 Exploitation de failles Web et cryptographie.</li>
-                        <li>🚀 Analyse forensique et ingénierie inverse.</li>
-                        <li>🚀 Développement d’outils d’attaque et défense.</li>
+                        <li>✔ Détection de comportements suspects</li>
+                        <li>✔ Investigation de logs et reverse engineering</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="project">
-                <img src="pentest_tool.jpg" alt="Création d’outil de pentest">
-                <div>
-                    <h3>🔨 Développement d’outils</h3>
-                    <p>Conception de scripts Python pour automatiser la cybersécurité :</p>
-                    <ul>
-                        <li>🛠 Bruteforce et énumération d’accès.</li>
-                        <li>🛠 Analyse réseau avec Scapy et Nmap.</li>
-                        <li>🛠 Détection de comportements suspects.</li>
-                    </ul>
-                </div>
-            </div>
         </section>
 
-        <!-- CV -->
-        <section id="cv">
-            <h2>Mon Parcours</h2>
-            <p>Vous pouvez consulter mon CV :</p>
-            <a href="assets/CV_Securite_Informatique.pdf" download target="_blank">
-                <button class="btn">📄 Télécharger mon CV</button>
-            </a>
-        </section>
-
-        <!-- GitHub -->
-        <section id="github">
-            <h2>Mon Travail sur GitHub</h2>
-            <p>Retrouvez mes projets en cybersécurité et développement.</p>
-            <a href="https://github.com/" target="_blank">
-                <button class="btn">🚀 Explorer mon GitHub</button>
-            </a>
-        </section>
-
-        <!-- Contact -->
         <section id="contact">
             <h2>Échangeons !</h2>
-            <form action="https://formspree.io/f/mon-email" method="POST">
+            <form>
                 <input type="text" name="name" placeholder="Votre nom" required>
                 <input type="email" name="email" placeholder="Votre email" required>
                 <textarea name="message" placeholder="Votre message" required></textarea>
                 <button type="submit" class="btn">Envoyer</button>
             </form>
         </section>
+
     </main>
 
-    <!-- Pied de page -->
     <footer>
-        <p>© 2025 - Portfolio | Sécurité Informatique</p>
+        <p>&copy; 2025 - Mon Portfolio. Tous droits réservés.</p>
     </footer>
+
+    <script>
+        // Script pour activer le menu mobile
+        document.querySelector(".nav-toggle").addEventListener("click", function() {
+            document.querySelector("nav ul").classList.toggle("active");
+        });
+    </script>
+
 </body>
 </html>

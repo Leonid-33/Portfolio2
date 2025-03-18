@@ -2,14 +2,14 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #e0e0e0; /* gris clair */
+    background-color: #f0f4f8; /* léger gris bleu clair */
     color: #333;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #ff6f00; /* orange vif */
+    background-color: #2c3e50; /* gris foncé */
     color: white;
     padding: 40px;
     text-align: center;
@@ -26,7 +26,7 @@ header p {
 }
 
 nav {
-    background-color: #00796b; /* vert foncé */
+    background-color: #34495e; /* gris plus foncé */
     padding: 10px;
 }
 
@@ -113,7 +113,7 @@ section {
 section h2 {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #00796b; /* vert foncé */
+    color: #2c3e50; /* gris foncé */
 }
 
 section p {
@@ -123,7 +123,7 @@ section p {
 }
 
 .btn {
-    background-color: #ff6f00; /* orange vif */
+    background-color: #e67e22; /* orange */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -133,7 +133,78 @@ section p {
 }
 
 .btn:hover {
-    background-color: #e65100; /* orange foncé */
+    background-color: #d35400; /* orange foncé */
 }
 
-/*
+/* Projets */
+
+.project {
+    display: flex;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    color: #2c3e50; /* gris foncé */
+}
+
+.project ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.project ul li {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+
+footer {
+    background-color: #2c3e50; /* gris foncé */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}

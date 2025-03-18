@@ -3,34 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Léonid Vitaly G</title>
-    <link rel="stylesheet" href="Style.css">
+    <title>Mon Portfolio | Sécurité Informatique</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
+    <!-- Navigation -->
+    <nav>
+        <button class="nav-toggle">
+            <span class="hamburger"></span> <!-- Bouton menu -->
+        </button>
+        <ul>
+            <li><a href="#about">Présentation</a></li>
+            <li><a href="#projects">Réalisations</a></li>
+            <li><a href="#cv">Mon CV</a></li>
+            <li><a href="#github">GitHub</a></li>
+            <li><a href="#contact">Me Contacter</a></li>
+        </ul>
+    </nav>
+
+    <!-- En-tête -->
     <header>
-        <h1>Bienvenue sur mon portfolio</h1>
+        <h1>🔐 Passionné de Cybersécurité</h1>
+        <p>Expertise en pentesting, sécurisation des systèmes et réponse aux incidents.</p>
     </header>
-    
-    <section>
-        <h2>À propos de moi</h2>
-        <p>Je suis passionné par la cybersécurité et les nouvelles technologies.
-        J'ai travaillé sur plusieurs projets de sécurité informatique et de développement web.
-        Je suis actuellement en recherche d'alternance ou stage dans le domaine de la cybersécurité.
-        </p>
-    </section>
-    
-    <section>
-        <h2>Mes projets</h2>
-        <p>Découvrez quelques projets sur lesquels j'ai travaillé :</p>
-        <a href="#" class="btn">Voir mes projets</a>
-    </section>
-    
-    <section>
-        <h2>Contact</h2>
-        <p>Vous pouvez me contacter à : <strong>vitalyleonid@gmail.com</strong></p>
-    </section>
-    
+
+    <main>
+        <!-- Présentation -->
+        <section id="about">
+            <h2>Qui suis-je ?</h2>
+            <p>Développeur et analyste en sécurité informatique, je travaille sur des solutions de protection des infrastructures IT.</p>
+        </section>
+
+        <!-- Réalisations -->
+        <section id="projects">
+            <h2>Projets de Sécurité</h2>
+
+            <div class="project">
+                <img src="security_analysis.jpg" alt="Audit de Sécurité">
+                <div>
+                    <h3>🕵️‍♂️ Audit de Sécurité</h3>
+                    <p>Utilisation d’outils avancés comme <strong>Burp Suite</strong> et <strong>Metasploit</strong>.</p>
+                    <ul>
+                        <li>✅ Évaluation des risques sur les systèmes et applications.</li>
+                        <li>✅ Test d'intrusion et exploitation de vulnérabilités.</li>
+                        <li>✅ Rédaction de rapports techniques.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="ctf_challenge.jpg" alt="Challenge CTF">
+                <div>
+                    <h3>🏆 Challenges de Sécurité</h3>
+                    <p>Compétition et formation via <strong>Root-Me</strong> et <strong>CTFtime</strong>.</p>
+                    <ul>
+                        <li>🚀 Exploitation de failles Web et cryptographie.</li>
+                        <li>🚀 Analyse forensique et ingénierie inverse.</li>
+                        <li>🚀 Développement d’outils d’attaque et défense.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="pentest_tool.jpg" alt="Création d’outil de pentest">
+                <div>
+                    <h3>🔨 Développement d’outils</h3>
+                    <p>Conception de scripts Python pour automatiser la cybersécurité :</p>
+                    <ul>
+                        <li>🛠 Bruteforce et énumération d’accès.</li>
+                        <li>🛠 Analyse réseau avec Scapy et Nmap.</li>
+                        <li>🛠 Détection de comportements suspects.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CV -->
+        <section id="cv">
+            <h2>Mon Parcours</h2>
+            <p>Vous pouvez consulter mon CV :</p>
+            <a href="assets/CV_Securite_Informatique.pdf" download target="_blank">
+                <button class="btn">📄 Télécharger mon CV</button>
+            </a>
+        </section>
+
+        <!-- GitHub -->
+        <section id="github">
+            <h2>Mon Travail sur GitHub</h2>
+            <p>Retrouvez mes projets en cybersécurité et développement.</p>
+            <a href="https://github.com/monprofil" target="_blank">
+                <button class="btn">🚀 Explorer mon GitHub</button>
+            </a>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Échangeons !</h2>
+            <form action="https://formspree.io/f/mon-email" method="POST">
+                <input type="text" name="name" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre email" required>
+                <textarea name="message" placeholder="Votre message" required></textarea>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
     <footer>
-        <p>&copy; 2025 - Mon Portfolio</p>
+        <p>© 2025 - Portfolio | Sécurité Informatique</p>
     </footer>
 </body>
+</html>
